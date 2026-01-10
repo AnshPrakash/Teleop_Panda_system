@@ -1,0 +1,63 @@
+# -------------------------------
+# ROS2 / colcon build artifacts
+# -------------------------------
+# colcon workspaces
+build/
+install/
+log/
+
+# If you have nested workspaces
+**/build/
+**/install/
+**/log/
+
+# -------------------------------
+# Python specific
+# -------------------------------
+# Bytecode / caches
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+.env/
+.venv/
+env/
+ENV/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+pip-wheel-metadata/
+
+# -------------------------------
+# VSCode editor
+# -------------------------------
+# Ignore all VSCode files by default
+.vscode/*
+
+# But allow shared team settings (optional)
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# -------------------------------
+# General OS / tooling
+# -------------------------------
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Node stuff (only if you use node in parts of project)
+node_modules/
+
+# Logs and databases
+*.log
+*.sqlite3
