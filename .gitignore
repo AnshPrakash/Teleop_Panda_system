@@ -61,3 +61,5 @@ node_modules/
 # Logs and databases
 *.log
 *.sqlite3
+
+data_collection/*
