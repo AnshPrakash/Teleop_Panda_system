@@ -1,3 +1,4 @@
+conda activate ros_humble
 
 # CUDA and locale environment variables
 export CUDA_HOME=/usr/local/cuda-12.6
@@ -6,9 +7,14 @@ export LD_LIBRARY_PATH=$CUDA_HOME/lib64:$LD_LIBRARY_PATH:/home/vignesh/.local/li
 export LC_NUMERIC=en_US.UTF-8
 
 source /opt/ros/humble/setup.bash
-# source /home/vignesh/poseidon_ws/install/setup.bash
+source /home/vignesh/poseidon_ws/install/setup.bash
 
+export CONDA_PREFIX=$(conda info --base)/envs/ros_humble
+export CMAKE_PREFIX_PATH=$CONDA_PREFIX:$CMAKE_PREFIX_PATH
 
+export CMAKE_PREFIX_PATH=/opt/ros/humble:$CMAKE_PREFIX_PATH
+
+rosdep init
 rosdep update
 rosdep install --from-paths src --ignore-src --rosdistro humble -y
 
