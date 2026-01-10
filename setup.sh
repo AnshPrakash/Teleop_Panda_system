@@ -1,6 +1,8 @@
 
 # Install Ros humble pacakages -> creta "ros_humble" conda environment
-bash ./install_ros_humble.sh
+bash ./dependencies/install_ros_humble.sh
 
+
+# Install franka ros2
 
 
