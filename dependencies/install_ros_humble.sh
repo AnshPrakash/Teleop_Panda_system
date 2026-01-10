@@ -5,7 +5,7 @@
 # bash Miniforge3-$(uname)-$(uname -m).sh
 
 
-conda create -n ros_humble -c conda-forge -c robostack-humble ros-humble-desktop
+conda create -n ros_humble -c conda-forge -c robostack-humble ros-humble-desktop-full
 
 # activate it
 mamba activate ros_humble
@@ -31,3 +31,12 @@ mamba install colcon-common-extensions cmake ninja pkg-config -y
 
 mamba install gazebo -y   # if available on channels
 
+
+mamba install ros-humble-control-msgs
+mamba install ros-humble-backward-ros
+mamba install ros-humble-control-toolbox
+mamba install ros-humble-controller-interface
+
+mamba install ros-humble-controller-manager
+mamba install ros-humble-controller-manager-msgs
+mamba install ros-humble-costmap-queue
