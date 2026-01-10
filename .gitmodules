@@ -1,6 +1,0 @@
-[submodule "src/franka_ros2_ws/src"]
-	path = src/franka_ros2
-	url = https://github.com/souljaboy764/franka_ros2.git
-[submodule "src/franka_description/src"]
-	path = src/franka_description
-	url = https://github.com/frankarobotics/franka_description.git
