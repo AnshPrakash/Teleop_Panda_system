@@ -39,10 +39,10 @@ pip-wheel-metadata/
 .vscode/*
 
 # But allow shared team settings (optional)
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
+# !.vscode/settings.json
+# !.vscode/tasks.json
+# !.vscode/launch.json
+# !.vscode/extensions.json
 
 # -------------------------------
 # General OS / tooling
