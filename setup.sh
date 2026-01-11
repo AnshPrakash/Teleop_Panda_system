@@ -3,6 +3,7 @@
 # bash ./dependencies/install_ros_humble.sh
 
 source ./dependencies/deactivate_conda.sh --verbose
+unset CMAKE_PREFIX_PATH
 
 # to make sure script runs conda free
 env -i \

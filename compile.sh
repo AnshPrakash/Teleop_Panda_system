@@ -1,4 +1,5 @@
 source ./dependencies/deactivate_conda.sh -verbose
+unset CMAKE_PREFIX_PATH
 
 # Activate virtual environment
 source ./venv/bin/activate
