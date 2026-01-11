@@ -2,6 +2,7 @@
 # Install Ros humble pacakages -> creta "ros_humble" conda environment
 # bash ./dependencies/install_ros_humble.sh
 
+source ./dependencies/deactivate_conda.sh --verbose
 
 # to make sure script runs conda free
 env -i \
@@ -30,5 +31,8 @@ source /home/vignesh/poseidon_ws/install/setup.bash
 
 #Install packages
 pip install catkin_pkg
+pip install --upgrade pip setuptools wheel packaging
+pip install -U colcon-common-extensions
+
 
 

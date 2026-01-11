@@ -12,13 +12,13 @@ git clone --recurse-submodules https://github.com/AnshPrakash/Teleop_Panda_syste
 ## Install all the dependencies
 
 ```bash
-bash setup.sh
+source ./setup.sh
 ```
 
 
 ## build ROS packages:
 
 ```bash
-bash compile.sh
+source ./compile.sh
 ```
 

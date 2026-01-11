@@ -1,3 +1,5 @@
+source ./dependencies/deactivate_conda.sh -verbose
+
 # Activate virtual environment
 source ./venv/bin/activate
 
@@ -14,7 +16,7 @@ source /home/vignesh/poseidon_ws/install/setup.bash
 
 # rosdep init
 rosdep update
-rosdep install --from-paths src --ignore-src --rosdistro humble -y
+rosdep install --from-paths src --ignore-src --rosdistro humble -y --skip-keys ament_python
 
 # use the --symlinks option to reduce disk usage, and facilitate development.
 # colcon build --symlink-install \
