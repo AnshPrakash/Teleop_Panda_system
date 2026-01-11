@@ -31,5 +31,4 @@ source /home/vignesh/poseidon_ws/install/setup.bash
 #Install packages
 pip install catkin_pkg
 
-# Install Franka teleop
-bash ./dependencies/install_franka_teleop.sh
+
