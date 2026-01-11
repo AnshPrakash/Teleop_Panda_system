@@ -12,7 +12,7 @@ source /home/vignesh/poseidon_ws/install/setup.bash
 
 
 
-rosdep init
+# rosdep init
 rosdep update
 rosdep install --from-paths src --ignore-src --rosdistro humble -y
 
