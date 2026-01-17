@@ -31,3 +31,7 @@ rosdep install --from-paths src --ignore-src --rosdistro humble -y --skip-keys a
 colcon build --symlink-install --cmake-args -DCMAKE_BUILD_TYPE=Release 
 
 source install/setup.bash
+
+
+# So, Gazebo can find models
+export GZ_SIM_RESOURCE_PATH=${GZ_SIM_RESOURCE_PATH}:/home/vignesh/poseidon_ws/src/
