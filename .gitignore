@@ -63,3 +63,4 @@ node_modules/
 *.sqlite3
 
 data_collection/*
+*.code-workspace
