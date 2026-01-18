@@ -36,4 +36,15 @@ pip install --upgrade pip setuptools wheel packaging
 pip install -U colcon-common-extensions
 
 
+# Install dependencies droid and oculus
+cd src/franka_teleop_ws/droid
+pip install -e .
+
+cd ..
+cd oculus_reader
+pip install -e .
+
+# Go back to root workspace
+cd ../../..
+
 
